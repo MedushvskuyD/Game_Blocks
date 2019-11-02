@@ -1,7 +1,39 @@
-@import "utils";
-@import "fonts";
-@import "typography";
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-body {
-  background: $c-gray;
+  span {
+    margin-top: 20px;
+  }
+
+  .field-list {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(6, 100px);
+    grid-template-rows: repeat(7, 100px);
+    list-style: none;
+  
+    li {
+      width: 100px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid black;
+      font-size: 40px;
+      cursor: pointer;
+    }
+  }
+
+  .reset {
+    width: 100px;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  
+  .congratulation {
+    display: none;
+  }
 }
