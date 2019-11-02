@@ -1,0 +1,43 @@
+.game {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .game span {
+    margin-top: 20px; }
+  .game .field-list {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(6, 100px);
+    grid-template-rows: repeat(7, 100px);
+    list-style: none; }
+    .game .field-list li {
+      width: 100px;
+      height: 100px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      border: 1px solid black;
+      font-size: 40px;
+      cursor: pointer; }
+  .game .reset {
+    width: 100px;
+    margin-top: 20px;
+    font-size: 20px; }
+  .game .congratulation {
+    display: none; }
+
+/*# sourceMappingURL=main.css.map */
